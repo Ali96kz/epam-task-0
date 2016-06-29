@@ -1,12 +1,10 @@
 package com.epam.az;
 
 
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
         Multiplier multiplier = new Multiplier();
-        MatrixFabric matrixFabric = new MatrixFabric();
+        MatrixFactory matrixFabric = new MatrixFactory();
 
         Matrix matrixA = matrixFabric.getRandomFillMatrix();
         Matrix matrixB = matrixFabric.getRandomFillMatrix(matrixA.getColumn());
