@@ -2,7 +2,7 @@ package com.epam.az;
 
 import java.util.Random;
 
-public class MatrixFabric {
+public class MatrixFactory {
 
     public Matrix getRandomFillMatrix(){
         Random random = new Random(System.currentTimeMillis());
