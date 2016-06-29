@@ -6,7 +6,7 @@ public class MatrixFabric {
 
     public Matrix getRandomFillMatrix(){
         Random random = new Random(System.currentTimeMillis());
-        int row = random.nextInt(7) + 1, column = random.nextInt(7) + 1;
+        int row = random.nextInt(7) + 2, column = random.nextInt(7) + 2;
 
         Matrix matrixA = new Matrix(row, column) ;
         matrixA.FillRandom();
@@ -16,9 +16,9 @@ public class MatrixFabric {
 
     public Matrix getRandomFillMatrix(int column){
         Random random = new Random(System.currentTimeMillis());
-        int row = random.nextInt(7) + 1;
+        int row = random.nextInt(7) + 2;
 
-        Matrix matrixA = new Matrix(row, column);
+        Matrix matrixA = new Matrix( column, row);
         matrixA.FillRandom();
         return matrixA;
     }

@@ -22,7 +22,14 @@ public class Matrix {
         }
         return stringBuilder.toString();
     }
-
+    public void prepare(){
+        matrix = new int[row][column];
+        for(int i = 0; i < row; i++){
+            for(int j = 0; j < column; j++) {
+                matrix[i][j] = 0;
+            }
+        }
+    }
     public void FillRandom(){
         Random random = new Random(System.currentTimeMillis());
         matrix = new int[row][column];
